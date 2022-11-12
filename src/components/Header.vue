@@ -1,8 +1,7 @@
 <template>
   <el-header class="header"
     ><router-link :to="{ name: 'ListView' }"
-      ><img alt="Markt-Pilot logo" src="../assets/markt_pilot_logo.svg"
-    /></router-link>
+      ><span>Cheap Chocolate</span></router-link>
   </el-header>
 </template>
 
@@ -18,7 +17,7 @@ export default defineComponent({
 .header {
   text-align: center;
   padding: 20px;
-  height: 80px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,5 +27,12 @@ export default defineComponent({
   width: 100%;
   box-shadow: 0 6px 40px rgba(23, 64, 74, 0.1);
   background-color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
 }
 </style>
